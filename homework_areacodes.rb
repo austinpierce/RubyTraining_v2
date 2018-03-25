@@ -9,31 +9,33 @@ dial_book = {
   "denver"=> "777",
   "sedona"=> "888",
   "sun valley"=> "999",
-  "vernon hills"=> "000"
+  "vernon hills"=> "847"
   }
 
-def get_city_names(somehash)
-  somehash.each { |k ,v| puts k }
+def get_city_list(cityhash)
+  cityhash.each {|city, v| puts city}
 end
 
-def get_area_code(thehash, key)
-  thehash[key]
+def get_area_from_city(hash, cityInput)
+  hash[cityInput]  
 end
 
 loop do
-  puts "Do you want to lookup an area code based on city name? (Y/N)"
+  puts "Do you want to find a area code from a city? (Y/N)"
   answer = gets.chomp
+  
   if answer != "Y"
     break
   end
+  
+  puts "Please select a city from the list"
+  get_city_list(dial_book)
   puts "Which city do you want the area code of?"
-  get_city_names(dial_book)
-  puts "Select a city"
   userCity = gets.chomp
   if dial_book.include?(userCity)
-    puts "The area code for #{userCity} is #{get_area_code(dial_book, userCity)}"
+    puts "The area code of #{userCity} is #{get_area_from_city(dial_book, userCity)}"
   else
-    puts "Please select a valid city from the list"
+    puts "Please select a valid city"
   end
-    
+  
 end
