@@ -1,0 +1,5 @@
+{"email":"austin@example.com","name":"Austin","permissions":{"accounts":"read","policies":"write","users":"write"}}
+{"email":"austin@example.com","name":"Austin","permissions":{"accounts":"read","policies":"write","users":"write"}}
+{"email":"austin@example.com","name":"Austin","permissions":{"accounts":"read","policies":"write","users":"write"}}
+{"email":"abc@example.com","name":"abc","permissions":{"accounts":"read","policies":"write","users":"write"}}
+{"email":"abc@example.com","name":"abc","permissions":{"abc":"123","policies":"write","users":"write"}}
