@@ -14,9 +14,11 @@ puts "Do you want to multiply or add?"
 user_response = gets.chomp
 
 if user_response == "multiply"
-  puts multiply(user_number1, user_number2)
+  result = multiply(user_number1, user_number2)
 elsif user_response == "add"
-  puts add(user_number1, user_number2)  
+  result = add(user_number1, user_number2)  
 else
   puts "Please select multiply or add"
 end
+
+puts result
